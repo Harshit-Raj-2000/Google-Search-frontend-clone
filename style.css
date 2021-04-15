@@ -1,10 +1,13 @@
 /* logo url- https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: None;
+  font-family: arial,sans-serif;
 }
 
 :root{
@@ -86,12 +89,72 @@ form img{
   color: var(--iconcolor);
 
 }
-.nav-links a:hover{
+
+a{
+  color: black;
+}
+a:hover{
   text-decoration: underline;
 }
 
-/* .footer-bar{
+footer ul{
   list-style-type: none;
+}
+
+footer{
   display: flex;
-  background-color: red;
-} */
+  flex-direction: column;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  color: rgba(0,0,0,.54);
+}
+
+footer a{
+  font-size: 15px;
+  color: rgba(0,0,0,.54);
+}
+
+.nav-bar a{
+  font-size: 13px;
+}
+
+.footer-links-top h5{
+  padding: 20px;
+}
+.footer-links-top hr{
+  border-top: 0.1px solid var(--iconcolor);
+}
+
+.footer-links-bottom,.footer-links-right
+,.footer-links-left{
+  display:flex;
+}
+.footer-links-bottom{
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:1200px){
+    .footer-links-bottom{
+      justify-content: center;
+    }
+}
+
+.footer-links-right{
+  justify-content: flex-end;
+}
+
+.footer-links-left{
+  justify-content: flex-start;
+}
+
+footer li{
+  padding:20px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
