@@ -81,6 +81,7 @@ form img{
   background: #f8f9fa;;
   border: 0px;
   padding: 8px 15px;
+  outline-width: 0px;
 }
 .button:hover{
   border: 1.5px solid var(--searchboxborder);
@@ -203,4 +204,88 @@ nav img, nav ul{
   font-size: 20px;
   color: #d93025;
   font-weight: lighter;
+}
+
+.advanced-form{
+  margin: 30px;
+}
+
+.tab-row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tab-row-head{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.find-label{
+  font-size: 13px;
+  padding: 18px;
+  width: 13vw;
+  min-width: 128px;
+}
+th{
+  text-align:left;
+}
+
+.advance-input{
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    width: 35vw;
+    padding: 10px;
+    outline-width: 0px;
+    min-width: 320px;
+}
+
+.advance-input:focus{
+  border: 1px solid #4d90fe;
+}
+
+.todo-label{
+  font-size: 13px;
+  padding: 18px;
+  width: 20vw;
+  color: #555;
+  font-size: 12px;
+}
+
+@media screen and (max-width:900px){
+  .todo-label{
+    display: none;
+  }
+}
+
+.todo-head{
+  color: #777;
+  font-size: 14px;
+}
+
+.find-head{
+  color: #333;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.advanced-submit{
+  background-color: #4d90fe;
+  padding: 8px;
+  border: 1px solid #3079ed;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  float:right;
+  left:0px;
+  position: relative;
+  left: 27vw;
+}
+
+.advanced-submit:hover{
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
 }

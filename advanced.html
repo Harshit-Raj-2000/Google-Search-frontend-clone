@@ -9,6 +9,8 @@
   <title>Google Advanced Search</title>
 </head>
 <body>
+  <div class="searchbody">
+  <div>
   <nav class="advanced-nav">
     <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
     <ul class="nav-links">
@@ -20,6 +22,82 @@
   <div class="heading">
     <h3>Advanced Search</h3>
     <hr>
+  </div>
+  </div>
+  <div class="advanced-form">
+    <form action="https://google.com/search">
+      <table class="form-table">
+        <tr class="tab-row-head">
+          <th class="find-label find-head">Find pages with...</th>
+          <th></th>
+          <th class="todo-label todo-head">To do this in the search box.</th>
+        </tr>
+        <tr  class="tab-row">
+          <td class="find-label">all these words:</td>
+          <td>
+            <input name="as_q" autocomplete="off" class="advance-input" type="text">
+          </td>
+          <td class="todo-label">
+            Type the important words: tri-colour rat terrier
+          </td>
+        </tr>
+        <tr class="tab-row">
+          <td class="find-label">this exact word or phrase:</td>
+          <td>
+            <input name="as_epq" autocomplete="off" class="advance-input" type="text">
+          </td>
+          <td class="todo-label">
+            Put exact words in quotes: "rat terrier"
+          </td>
+        </tr>
+        <tr class="tab-row">
+          <td class="find-label">any of these words:</td>
+          <td>
+            <input name="as_oq" autocomplete="off" class="advance-input" type="text">
+          </td>
+          <td class="todo-label">
+            Type OR between all the words you want: miniature OR standard
+          </td>
+        </tr>
+        <tr class="tab-row">
+          <td class="find-label">none of these words:</td>
+          <td>
+            <input name="as_eq" autocomplete="off" class="advance-input" type="text">
+          </td>
+          <td class="todo-label">
+            Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+          </td>
+        </tr>
+        <tr class="tab-row">
+          <td class="find-label"></td>
+          <td id="submit-data">
+            <input type="submit" class="advanced-submit" value="Advanced Search">
+          </td>
+          <td class="todo-label">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <footer class="footer-bar">
+    <div class="footer-links-top">
+      <h5>India</h5>
+      <hr>
+    </div>
+    <div class="footer-links-bottom">
+    <ul class="footer-links-left">
+      <li><a href="">About</a></li>
+      <li><a href="">Advertising</a></li>
+      <li><a href="">Business</a></li>
+      <li><a href="">How Search works</a></li>
+    </ul>
+    <ul class="footer-links-right">
+      <li><a href="">Privacy</a></li>
+      <li><a href="">Terms</a></li>
+      <li><a href="">Settings</a></li>
+    </ul>
+    </div>
+  </footer>
   </div>
 </body>
 </html>
